@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="images/logo.png" /></a>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="LOGIN.HTML">LOGIN</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>OUR CERTIFICATES & ONLINE PROGRAMS FOR 20201</h1>
+      </section>
+    <div class="big-img">
+        <div class="content ">
+            <header>Login Form</header>
+            <form action="#">
+                <div class="field ">
+                    <span class="fa fa-user"></span>
+                    <input type="text" required placeholder="Email or phone">
+                </div>
+                <div class="field space">
+                    <span class="fa fa-lock"></span>
+                    <input type="password" class="password" placeholder="Password">
+                    <span class="show">Show Password</span>
+                </div>
+                <div class="pass">
+                    <a href="#">Forget Password?</a>
+                </div>
+                <div class="field">
+                    
+                    <input type="submit" value="Login">
+                </div>
+               <div class="login">or login with</div>
+               <div class="link">
+                   <div class="facebook">
+                       <i class="fab fa-facebook-f"></i><span>Facebook</span>
+                   </div>
+                   <div class="instagram">
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
+                </div>
+               </div>
+                <div class="signup">Don't have an account?
+                    <a href="#">Signup Now</a>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+<script>
+    const pass_field = document.queryselector('.password');
+    const show_btn = document.querySelector('.show');
+    pass_field.addEvntListener('click',function(){
+        if(pass_field.type == "password"){
+            pass_field.type = "text";
+            pass_field.style.color = "#3498db";
+            show.btn.textContent = "hide";
+        }
+        else{
+            pass_field.type = "password";
+            pass_field.style.color = "#222";
+            show_btn.textContent = "Show"
+        }
+    });
+
+
+
+
+</script>
+<script>
+    var navlinks = document.getElementById("nav-links")
+    
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
